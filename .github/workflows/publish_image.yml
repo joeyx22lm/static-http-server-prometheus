@@ -13,6 +13,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       -
+        name: Check out the repo
+        uses: actions/checkout@v2
+      -
         name: Push to GitHub Packages
         uses: docker/build-push-action@v1
         with:
@@ -21,6 +24,3 @@ jobs:
           registry: docker.pkg.github.com
           repository: joeyx22lm/static-http-server-prometheus/static-http-server-prometheus
           tag_with_ref: true
-      -
-        name: Image digest
-        run: echo ${{ steps.docker_build.outputs.digest }}
