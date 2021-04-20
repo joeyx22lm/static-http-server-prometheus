@@ -1,13 +1,12 @@
-FROM python:3.9.4-buster
+FROM golang:1.16.3-alpine3.13
+
+ENV PROMETHEUS_PORT 8080
+ENV PORT 5000
 
 WORKDIR /usr/src/app
 
-COPY requirements.txt ./
-RUN pip install --no-cache-dir -r requirements.txt
-
-COPY ./src ./
+COPY ./src .
+RUN go install
 ADD ./www /www
 
-WORKDIR /www
-
-CMD [ "python", "/usr/src/app/main.py" ]
+CMD ["go", "run", "main.go"]
