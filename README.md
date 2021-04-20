@@ -7,6 +7,11 @@ All `GET`, `HEAD`, and `POST` requests are instrumented with metrics to count th
 This image will serve static content from the `/www` directory on port `5000` by default.
 Prometheus metrics are exposed on port `8080` by default.
 
+### How to use
+
+This docker container is hosted using Github's package registry. Images can be pulled as follows:
+
+`docker pull docker.pkg.github.com/joeyx22lm/static-http-server-prometheus/static-http-server-prometheus:v0.2.0`
 
 ### Environment Variables
 |      Variable      |                 Description               | Default |
