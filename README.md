@@ -6,3 +6,10 @@ All `GET`, `HEAD`, and `POST` requests are instrumented with a `Summary` metric 
 
 This image will serve static content from the `/www` directory on port `5000` by default.
 Prometheus metrics are exposed on port `8080` by default.
+
+### Environment Variables
+
+|      Variable      |                 Description               | Default |
+|--------------------|-------------------------------------------|---------|
+|   PROMETHEUS_PORT  | Port to expose Prometheus metrics server  |  8080   |
+|         PORT       | Port to expose HTTP server                |  5000   |
