@@ -1,4 +1,4 @@
-# Golang static content HTTP server with Prometheus instrumentation
+# Golang HTTP server with Prometheus instrumentation
 
 This image can be used to serve static content over HTTP, while exporting metrics in Prometheus format.
 
