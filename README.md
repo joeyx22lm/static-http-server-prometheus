@@ -20,7 +20,7 @@ Prometheus metrics are exposed on port `8080` by default.
  - Base image: `python:3.9.4-buster`
 
 `v0.2.0`: A Golang-based HTTP server that exposes Prometheus metrics.
- - Base image: golang:1.16.3-alpine3.13
+ - Base image: `golang:1.16.3-alpine3.13`
 
 
 ### Variants
