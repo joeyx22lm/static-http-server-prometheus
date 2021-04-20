@@ -22,3 +22,4 @@ jobs:
           registry: docker.pkg.github.com
           repository: joeyx22lm/static-http-server-prometheus/static-http-server-prometheus
           tag_with_ref: true
+          tags: latest
