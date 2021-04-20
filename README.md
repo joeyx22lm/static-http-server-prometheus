@@ -21,10 +21,11 @@ This docker container is hosted using Github's package registry. Images can be p
 
 
 ### Changelog
+
+`v1.0.0`: A Golang-based HTTP server that exposes Prometheus metrics.
+ - Base image: `golang:1.16.3-alpine3.13`
+ - Tag(s): `v1.0.0`, `latest`
+
 `v0.1.0`: A Python-based HTTP server that exposes Prometheus metrics.
  - Base image: `python:3.9.4-buster`
  - Tag(s): `v0.1.0`
-
-`v0.2.0`: A Golang-based HTTP server that exposes Prometheus metrics.
- - Base image: `golang:1.16.3-alpine3.13`
- - Tag(s): `v0.2.0`, `latest`
